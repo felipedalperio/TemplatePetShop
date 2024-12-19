@@ -21,7 +21,7 @@ export default function Header() {
                 </div>
             </div>
             <div className="rigth">
-                <img src="./HeaderImage1.png" alt="" />
+                <img src="/HeaderImage1.svg" alt="" />
 
                 <div className="circle"></div>
                 <div className="circle"></div>
