@@ -1,0 +1,138 @@
+.options {
+    display: flex;
+    margin: 100px 0px;
+    gap: 40px;
+}
+
+.options .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px #b9b9b9;
+    padding: 20px;
+    flex: 1;
+}
+
+.options .icon {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 2px 2px 10px #b9b9b9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 40px;
+    top: -60px;
+    border-radius: 50%;
+
+
+}
+
+.options .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    gap: 10px;
+    position: relative;
+    top: -40px;
+    gap: 30px;
+}
+
+.options .title {
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.options .desc {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #777;
+    text-align: center;
+}
+
+.options .content button {
+    background-color: var(--red900);
+    border: none;
+    color: white;
+    width: 50%;
+    padding: 10px 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+    .options .title {
+        font-size: 30px;
+    }
+
+    .options .item {
+        padding: 10px;
+    }
+
+    .options .desc {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .options {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .options {
+        margin: 80px 0px;
+    }
+
+    .options .item{
+        align-items: start;
+        justify-content: start;
+    }
+
+    .options .title {
+        font-size: 40px;
+    }
+    .options .desc {
+        font-size: 18px;
+    }
+
+    .options .icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+        top: -30px;
+    }
+
+    .options .content{
+        justify-content: start;
+    }
+
+    .options .content {
+        gap: 10px;
+    }
+    .options .content button {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 600px){
+    .options .item {
+        padding: 0 10px;
+    }
+    .options .title {
+        font-size: 30px;
+    }
+    .options .desc {
+        font-size: 16px;
+        text-align: justify;
+        word-spacing: 1px;
+    }
+}
