@@ -211,3 +211,9 @@
         transition: all ease .5s;
     }
 }
+
+@media (min-width: 2000px) {
+    .menu {
+        margin: auto 260px;
+    }
+}
