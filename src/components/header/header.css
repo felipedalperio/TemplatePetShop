@@ -10,8 +10,7 @@
     padding-left: 160px;
     padding-right: 40px;
     max-height: 800px;
-
-
+    overflow-x: clip;
     background-image: url('https://i.pinimg.com/236x/be/0a/c2/be0ac2a0f094a9c12c4e5ec3de0c380d.jpg');
     object-fit: cover;
     background-repeat: no-repeat;
@@ -277,6 +276,15 @@
 }
 
 
+@media (min-width: 2000px) {
+    .header .left .title {
+        font-size: 80px;
+    }
+    .header .rigth img {
+        bottom: -75px;
+        width: 850px;
+    }
+}
 @media (max-width: 600px) {
 
     .header {
