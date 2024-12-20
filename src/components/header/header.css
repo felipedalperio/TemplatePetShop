@@ -276,21 +276,13 @@
 }
 
 
-@media (min-width: 2000px) {
+@media (min-width: 1700px) {
     .header .left .title {
-        font-size: 90px;
-    }
-    .header .left .desc {
-        font-size: 30px;
+        font-size: 80px;
     }
     .header .rigth img {
         bottom: -75px;
         width: 850px;
-    }
-
-    .header{
-        padding-left: 260px;
-        padding-right: 140px;
     }
 }
 @media (max-width: 600px) {
