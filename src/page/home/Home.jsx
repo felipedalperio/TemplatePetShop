@@ -5,6 +5,7 @@ import About from '../../components/about/About'
 import PhotoGallery from '../../components/photoGallery/PhotoGallery'
 import Comments from '../../components/comments/Comments'
 import Map from '../../components/map/Map'
+import Footer from '../../components/footer/Footer'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Comments />
         <Map/>
       </div>
+      <Footer/>
     </div>
   )
 }

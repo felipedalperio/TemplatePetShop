@@ -45,6 +45,7 @@
   scroll-behavior: smooth;
   /* Adiciona scroll suave como fallback */
   scrollbar-width: none;
+  position: relative;
   /* Para navegadores baseados em Gecko (Firefox) */
 }
 
@@ -61,6 +62,7 @@
   padding: 0 20px 10px 20px;
   gap: 10px;
   flex-direction: column;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .boxWrapper .box .desc {
@@ -109,6 +111,43 @@
   font-size: 14px;
 }
 
+
+.cointanerOptions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cointanerOptions .arrow {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  background-color: rgb(252, 85, 85, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 9;
+  transition: all ease .4s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.cointanerOptions .arrow:hover{
+  background-color: rgb(252, 85, 85, 1);
+}
+
+.cointanerOptions .arrow.left{
+  left: 0;
+}
+
+.cointanerOptions .arrow.rigth{
+  right: 0;
+}
+
 .iconQuoteTop {
   position: relative;
   top: -10px;
@@ -134,12 +173,20 @@
   .Comments .description {
     font-size: 16px;
     letter-spacing: 1.2px;
-    text-align: justify;
   }
 
   
   .Comments .title {
     font-size: 24px;
     font-weight: 500;
+  }
+
+  .cointanerOptions{
+    position: initial;
+  }
+
+  .cointanerOptions .arrow{
+      width: 40px;
+      height: 40px;
   }
 }
