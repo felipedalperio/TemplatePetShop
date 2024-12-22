@@ -82,6 +82,9 @@
     .photoGallery .gallery img {
         height: 180px;
     }
+    .gallery {
+        animation-name: bannermove3;
+    }
 }
 
 @keyframes bannermove {
@@ -89,7 +92,7 @@
         transform: translate(0, 0);
     }
     100% {
-        transform: translate(-2723px, 0);
+        transform: translate(-2963px, 0);
     }
   }
 
@@ -98,6 +101,15 @@
       transform: translate(0, 0);
     }
     100% {
-        transform: translate(-1920px, 0);
+        transform: translate(-2101px, 0);
+    }
+  }
+
+  @keyframes bannermove3 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-1728px, 0);
     }
   }
