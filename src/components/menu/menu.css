@@ -85,6 +85,10 @@
 .items .contact{
     display: none;
 }
+.menu li a{
+    color: #1f1f1f
+}
+
 .contact {
     font-size: 14px;
     font-weight: 500;

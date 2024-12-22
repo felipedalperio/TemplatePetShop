@@ -44,22 +44,22 @@ export default function Menu() {
           <img src="./logo.svg" alt="logo" />
         </div>
         <ul>
-          <li>Home</li>
-          <li>Serviços</li>
-          <li>Sobre nós</li>
-          <li>Fotos</li>
-          <li>Avaliações</li>
+          <li><a href='#header' onClick={() => setOpen(false)}>Home</a></li>
+          <li><a href='#options' onClick={() => setOpen(false)}>Serviços</a></li>
+          <li><a href='#aboutus' onClick={() => setOpen(false)}>Sobre nós</a></li>
+          <li><a href='#gallery' onClick={() => setOpen(false)}>Fotos</a></li>
+          <li><a href='#comments' onClick={() => setOpen(false)}>Avaliações</a></li>
         </ul>
-        <button className="contact">
+        <a className="contact" href='https://api.whatsapp.com/send?phone=5527998957231'>
           Contato
           <FaArrowRightLong />
-        </button>
+        </a>
       </div>
 
-      <button className="contact">
-          Contato
-          <FaArrowRightLong />
-        </button>
+      <a className="contact" href='https://api.whatsapp.com/send?phone=5527999655346'>
+        Contato
+        <FaArrowRightLong />
+      </a>
 
       {isSmallScreen && (
         <div className="hamburguer" onClick={() => setOpen(!open)}>

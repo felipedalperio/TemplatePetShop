@@ -23,12 +23,10 @@ export default function Comments() {
   };
 
   return (
-    <div className="Comments">
+    <div className="Comments" id="comments">
       <span className="title">Comentários e Avaliações</span>
       <span className="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta modi,
-        unde exercitationem dolor enim odio harum delectus ab sequi quas sunt
-        voluptas voluptate inventore rem eos illo possimus ipsa incidunt.
+      Com uma avaliação de 4.6 estrelas no Google, somos reconhecidos por nossa dedicação e amor aos animais. Venha nos visitar e conheça tudo o que podemos fazer por você e seu pet! Seguem abaixo comentários e avaliações de nossos clientes.
       </span>
       <div className="wrapperOtions">
         {item.map((object) => (
@@ -57,7 +55,7 @@ export default function Comments() {
             <div className="profile">
               <img src={object.img} alt="" />
               <div className="profileWrapper">
-                <spon className="name">{object.name}</spon>
+                <span className="name">{object.name}</span>
                 <div className="stars">
                   {Array.from({ length: 5 }, (_, index) => (
                     <div key={index + 1}>

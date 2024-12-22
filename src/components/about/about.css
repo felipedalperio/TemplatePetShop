@@ -21,7 +21,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    letter-spacing: 1.3px;
+    letter-spacing: 1px;
 }
 
 .about span:last-child::before{
@@ -43,7 +43,6 @@
     }
     .about span:last-child{
         font-size: 16px;
-        letter-spacing: 1.2px;
         text-align: justify;
     }
 
