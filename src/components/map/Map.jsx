@@ -3,6 +3,7 @@ import { FaLocationDot  } from "react-icons/fa6";
 import { IoArrowForward } from "react-icons/io5";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { LiaPhoneSolid } from "react-icons/lia";
+import { CgMail } from "react-icons/cg";
 
 export default function Map() {
     return (
@@ -41,6 +42,11 @@ export default function Map() {
                             <div className="contact-item">
                                 <LiaPhoneSolid />
                                 <span>(27) 99895-7231</span>
+                            </div>
+
+                            <div className="contact-item">
+                                <CgMail />
+                                <span>amorepet.atendimento@gmail.com</span>
                             </div>
                         </div>
 
